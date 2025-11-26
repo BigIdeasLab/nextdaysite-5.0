@@ -3,6 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --pri: false;
+  --white: #fff;
+  --light: #e5e5e5;
+  --black: rgb(8, 8, 8);
+  --top: #fff;
+  --grey: #1f1f1f;
+}
+
+@font-face {
+  font-family: playfair;
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap");
 }
 
 @theme inline {
@@ -19,8 +35,33 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for GSAP animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

@@ -1,0 +1,86 @@
+
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        pri: "var(--pri)",
+        white: "var(--white)",
+        light: "var(--light)",
+        black: "var(--black)",
+        grey: "var(--grey)",
+      },
+      fontFamily: {
+        gilroy: ["gilroy", "sans-serif"],
+        playfair: ["playfair", "serif"],
+      },
+      fontSize: {
+        "13vw": "13vw",
+        "12vw": "12vw",
+        "8vw": "8vw",
+        "6.5vw": "6.5vw",
+        "3vw": "3vw",
+        "2vw": "2vw",
+        "1.5vw": "1.5vw",
+      },
+      spacing: {
+        "15vw": "15vw",
+        "13vw": "13vw",
+        "12vw": "12vw",
+        "8vw": "8vw",
+        "6vw": "6vw",
+        "4vw": "4vw",
+        "2vw": "2vw",
+        "1vw": "1vw",
+        "20vw": "20vw",
+        "25vw": "25vw",
+        "29vw": "29vw",
+        "45vw": "45vw",
+        "48vw": "48vw",
+        "50vw": "50vw",
+        "52vw": "52vw",
+        "59vw": "59vw",
+        "70%": "70%",
+        "80vh": "80vh",
+        "80vw": "80vw",
+        "100vh": "100vh",
+        "110vh": "110vh",
+        "300vh": "300vh",
+        "500vh": "500vh",
+      },
+      width: {
+        "15vw": "15vw",
+        "18vw": "18vw",
+        "20vw": "20vw",
+        "59vw": "59vw",
+        "70%": "70%",
+      },
+      height: {
+        "7.5": "30px",
+        "8.5rem": "8.5rem",
+        "25vh": "25vh",
+        "50vh": "50vh",
+        "80vh": "80vh",
+        "100vh": "100vh",
+        "110vh": "110vh",
+        "300vh": "300vh",
+        "500vh": "500vh",
+      },
+      borderRadius: {
+        "3rem": "3rem",
+        "30vw": "30vw",
+        "20%": "20%",
+        "40%": "40%",
+        "100%": "100%",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;

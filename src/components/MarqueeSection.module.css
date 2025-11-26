@@ -1,0 +1,178 @@
+.marqueeSection {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e5e5e5 0%, #f0f0f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.marqueeContainer {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.scrollTrack {
+  display: flex;
+  height: 100%;
+  gap: 2rem;
+  padding: 0 2rem;
+  will-change: transform;
+}
+
+.imageItem {
+  position: relative;
+  flex: 0 0 300px;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.imageItem:hover {
+  transform: scale(1.05);
+}
+
+.imageItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 2rem 1rem 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageItem:hover .imageOverlay {
+  opacity: 1;
+}
+
+.imageOverlay p {
+  margin: 0;
+  font-family: gilroy, 'Gilroy', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.marqueeText {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  z-index: 10;
+}
+
+.marqueeText h2 {
+  font-family: playfair, 'Playfair Display', serif;
+  font-size: 3vw;
+  font-style: oblique;
+  margin: 0;
+  color: rgb(8, 8, 8);
+  letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .marqueeSection {
+    min-height: 80vh;
+    padding: 2rem 0;
+  }
+
+  .marqueeContainer {
+    height: 300px;
+    width: 95%;
+  }
+
+  .imageItem {
+    flex: 0 0 250px;
+  }
+
+  .marqueeText h2 {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .marqueeSection {
+    min-height: 60vh;
+    padding: 1.5rem 0;
+  }
+
+  .marqueeContainer {
+    height: 250px;
+    width: 98%;
+    border-radius: 15px;
+  }
+
+  .scrollTrack {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .imageItem {
+    flex: 0 0 200px;
+    border-radius: 10px;
+  }
+
+  .marqueeText {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .marqueeText h2 {
+    font-size: 2vw;
+  }
+
+  .imageOverlay p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .marqueeSection {
+    min-height: 50vh;
+    padding: 1rem 0;
+  }
+
+  .marqueeContainer {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .scrollTrack {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .imageItem {
+    flex: 0 0 150px;
+  }
+
+  .marqueeText h2 {
+    font-size: 1.5vw;
+  }
+
+  .imageOverlay p {
+    font-size: 0.7rem;
+  }
+}

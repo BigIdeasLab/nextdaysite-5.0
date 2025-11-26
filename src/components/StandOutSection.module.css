@@ -1,0 +1,319 @@
+.allWrapper {
+  position: relative;
+  width: 100%;
+  z-index: 9;
+  background-color: rgb(8, 8, 8);
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4vw;
+}
+
+/* Page 4 - We'll Help You Stand Out */
+.section:first-child {
+  padding: 10vh 4vw;
+}
+
+.topWrapBubble {
+  position: absolute;
+  top: -20%;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) scale(1.2);
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  background-color: rgb(8, 8, 8);
+}
+
+.h14 {
+  color: #fff;
+  font-size: 12vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: oblique;
+  font-family: playfair, 'Playfair Display', serif;
+  margin: 0 0 0.5rem 0;
+  line-height: 0.8;
+  letter-spacing: 0px;
+}
+
+.h14:nth-child(2) {
+  margin-left: 13vw;
+}
+
+.h14:nth-child(3) {
+  margin-left: 29vw;
+  white-space: nowrap;
+}
+
+.h14:nth-child(4) {
+  margin-left: 8vw;
+  font-family: gilroy, 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Page 5 - Make All Your Dreams */
+.section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 110vh;
+  padding: 4vw;
+}
+
+.circles {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: visible;
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 3rem;
+  justify-content: flex-start;
+}
+
+.circle {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  display: inline-block;
+  flex-shrink: 0;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.circle:hover {
+  background-color: #2a2a2a;
+}
+
+.circle:nth-child(5) {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 6rem;
+  background-color: #e5e5e5;
+}
+
+.section:nth-child(2) h1 {
+  font-size: 13vw;
+  font-weight: 100;
+  line-height: 0.9;
+  color: #e5e5e5;
+  font-family: playfair, 'Playfair Display', serif;
+  font-style: oblique;
+  letter-spacing: 0px;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.section:nth-child(2) h1:nth-child(3) {
+  font-family: gilroy, 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-right: 10px;
+}
+
+.section:nth-child(2) h1:nth-child(4) {
+  margin-left: 8vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+  font-weight: 500;
+}
+
+/* Page 6 - Description */
+.section:nth-child(3) {
+  padding: 8vh 4vw 0 15vw;
+}
+
+.section:nth-child(3) h2 {
+  display: flex;
+  gap: 0.5vw;
+  align-items: baseline;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.section:nth-child(3) h2 span {
+  display: inline-block;
+}
+
+.section:nth-child(3) p {
+  font-family: gilroy, 'Gilroy', sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+.section:nth-child(3) p:nth-child(1) {
+  font-size: 0.9rem;
+  width: 20vw;
+  font-weight: 100;
+}
+
+.section:nth-child(3) p:nth-child(2) {
+  font-size: 3vw;
+  font-weight: 100;
+  width: 59vw;
+  margin-top: 10vh;
+  margin-left: 20vw;
+  line-height: 1.4;
+}
+
+/* Page 7 - Featured Work */
+.section:nth-child(4) {
+  padding: 5vw 4vw;
+  min-height: 100vh;
+}
+
+.featuredText {
+  margin-top: 15vh;
+}
+
+.featuredText h1 {
+  font-weight: 500;
+  font-size: 13vw;
+  line-height: 0.8;
+  color: #fff;
+  font-style: oblique;
+  font-family: playfair, 'Playfair Display', serif;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.featuredText h1:nth-child(2) {
+  font-family: gilroy, 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 1vw;
+  letter-spacing: 0;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .h14 {
+    font-size: 8vw;
+  }
+
+  .h14:nth-child(2) {
+    margin-left: 5vw;
+  }
+
+  .h14:nth-child(3) {
+    margin-left: 15vw;
+  }
+
+  .h14:nth-child(4) {
+    margin-left: 3vw;
+  }
+
+  .circle {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .circle:nth-child(5) {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .section:nth-child(2) h1 {
+    font-size: 10vw;
+  }
+
+  .section:nth-child(3) {
+    padding: 4vh 0 0 8vw;
+  }
+
+  .section:nth-child(3) p:nth-child(2) {
+    font-size: 2.5vw;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+
+  .featuredText h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .allWrapper {
+    min-height: auto;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .h14 {
+    font-size: 5vw;
+  }
+
+  .h14:nth-child(2),
+  .h14:nth-child(3),
+  .h14:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .circles {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .circle {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .circle:nth-child(5) {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .section:nth-child(2) h1 {
+    font-size: 6vw;
+    justify-content: center;
+  }
+
+  .section:nth-child(2) h1:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .section:nth-child(3) {
+    padding: 2rem 1rem;
+  }
+
+  .section:nth-child(3) h2 {
+    font-size: 1rem;
+  }
+
+  .section:nth-child(3) p:nth-child(1) {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .section:nth-child(3) p:nth-child(2) {
+    font-size: 1.5vw;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .featuredText h1 {
+    font-size: 6vw;
+  }
+}
