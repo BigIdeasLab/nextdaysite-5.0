@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import styles from './VideoSection.module.css';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styles from "./VideoSection.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,14 +33,14 @@ export default function VideoSection() {
           x,
           y,
           duration: 0.3,
-          ease: 'sine.out',
-          overwrite: 'auto',
+          ease: "sine.out",
+          overwrite: "auto",
         });
       }
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function VideoSection() {
       gsap.to(mainvideoRef.current, {
         scrollTrigger: {
           trigger: mainvideoRef.current,
-          start: 'top 100%',
+          start: "top 100%",
           scrub: 1,
         },
         duration: 1,
@@ -61,19 +61,19 @@ export default function VideoSection() {
   const handleMouseEnter = () => {
     if (overlayRef.current) {
       gsap.to(overlayRef.current, {
-        backgroundColor: '#0009',
+        backgroundColor: "#0009",
         duration: 0.5,
-        ease: 'power2.out',
+        ease: "power2.out",
       });
     }
     // Cursor feedback
     if (cursorRef.current) {
       gsap.to(cursorRef.current, {
-        backgroundColor: 'transparent',
-        border: '2px solid #fff',
+        backgroundColor: "transparent",
+        border: "2px solid #fff",
         scale: 3,
         duration: 0.3,
-        ease: 'circ.out',
+        ease: "circ.out",
       });
     }
   };
@@ -81,19 +81,19 @@ export default function VideoSection() {
   const handleMouseLeave = () => {
     if (overlayRef.current) {
       gsap.to(overlayRef.current, {
-        backgroundColor: '#0004',
+        backgroundColor: "#0004",
         duration: 0.5,
-        ease: 'power2.out',
+        ease: "power2.out",
       });
     }
     // Reset cursor
     if (cursorRef.current) {
       gsap.to(cursorRef.current, {
-        backgroundColor: '#fff',
-        border: 'none',
+        backgroundColor: "#fff",
+        border: "none",
         scale: 1,
         duration: 0.3,
-        ease: 'circ.out',
+        ease: "circ.out",
       });
     }
     // Reset video position
@@ -102,7 +102,7 @@ export default function VideoSection() {
         x: 0,
         y: 0,
         duration: 0.6,
-        ease: 'sine.out',
+        ease: "sine.out",
       });
     }
   };
@@ -118,13 +118,7 @@ export default function VideoSection() {
         <a href="#" className={styles.vid}>
           <div ref={videoRef} className={styles.video}>
             <span>
-              <video
-                src="https://assets.website-files.com/6148d60a98a3dba79b2d6a81/6148d60a98a3dbf17f2d6b85_mainVideo.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
+              <video src="/Scene-1.mp4" autoPlay loop muted playsInline />
             </span>
             <div ref={overlayRef} className={styles.overlay} />
           </div>

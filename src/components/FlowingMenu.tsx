@@ -17,12 +17,14 @@ interface FlowingMenuProps {
 
 const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
   return (
-    <div className="menu-wrap">
-      <nav className="menu">
-        {items.map((item, idx) => (
-          <MenuItem key={idx} {...item} />
-        ))}
-      </nav>
+    <div style={{ height: "600px", position: "relative" }}>
+      <div className="menu-wrap bg-black">
+        <nav className="menu">
+          {items.map((item, idx) => (
+            <MenuItem key={idx} {...item} />
+          ))}
+        </nav>
+      </div>
     </div>
   );
 };

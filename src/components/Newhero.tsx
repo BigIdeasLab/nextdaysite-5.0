@@ -6,22 +6,9 @@ import { ClaudeAI, Cursor, Github, Google, Grok, OpenAI } from "@aliimam/logos";
 
 export function HeroSection02() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative text-black">
       <div className="overflow-hidden flex flex-col px-6 items-center justify-center">
-        <div className="flex w-full absolute z-20 top-4 px-4 justify-between">
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/aliimam-in/aliimam/refs/heads/main/apps/www/public/brand/ai-logo.png"
-              alt="Design Logo"
-              height={50}
-              width={50}
-              className="h-10 w-full object-contain"
-            />
-          </div>
-          <Button className="rounded-full">Explore Designs</Button>
-        </div>
-
-        <div className="z-10 mt-28 my-20 space-y-10 border shadow-2xl backdrop-blur-sm rounded-xl p-10 lg:p-20 mx-auto max-w-7xl flex flex-col">
+        <div className="z-10 mt-28 my-20 space-y-10 border border-[#fffaec] shadow-2xl backdrop-blur-sm rounded-xl p-10 lg:p-20 mx-auto max-w-7xl flex flex-col">
           <div className="flex justify-center flex-col lg:flex-row items-center gap-6 lg:gap-10">
             <h1 className="font-playfair text-3xl font-medium mix-blend-overlay md:text-5xl lg:text-8xl text-center">
               Design Code

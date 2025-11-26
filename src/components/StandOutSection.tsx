@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import styles from './StandOutSection.module.css';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styles from "./StandOutSection.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,7 +23,7 @@ export default function StandOutSection() {
       gsap.from(weRef.current, {
         scrollTrigger: {
           trigger: weRef.current,
-          start: 'top 80%',
+          start: "top 80%",
           scrub: 1,
         },
         x: 100,
@@ -35,7 +35,7 @@ export default function StandOutSection() {
       gsap.from(helpRef.current, {
         scrollTrigger: {
           trigger: helpRef.current,
-          start: 'top 80%',
+          start: "top 80%",
           scrub: 1,
         },
         x: -100,
@@ -47,7 +47,7 @@ export default function StandOutSection() {
       gsap.from(standRef.current, {
         scrollTrigger: {
           trigger: standRef.current,
-          start: 'top 80%',
+          start: "top 80%",
           scrub: 1,
         },
         x: 150,
@@ -56,21 +56,21 @@ export default function StandOutSection() {
     }
 
     // Animate Page 5 h1 elements
-    const page5h1s = page5Ref.current?.querySelectorAll('h1');
+    const page5h1s = page5Ref.current?.querySelectorAll("h1");
     if (page5h1s) {
       page5h1s.forEach((h1: Element) => {
         gsap.from(h1, {
           scrollTrigger: {
             trigger: h1,
-            start: 'top 90%',
+            start: "top 90%",
           },
           opacity: 0,
-          y: '50px',
-          z: '-90px',
-          rotateX: '-90deg',
-          skewX: '40deg',
-          skewY: '-8deg',
-          ease: 'circ.out',
+          y: "50px",
+          z: "-90px",
+          rotateX: "-90deg",
+          skewX: "40deg",
+          skewY: "-8deg",
+          ease: "circ.out",
           duration: 1,
         });
       });
@@ -83,28 +83,28 @@ export default function StandOutSection() {
       gsap.to(circlesRef.current, {
         scrollTrigger: {
           trigger: circlesRef.current,
-          start: 'top 90%',
-          end: 'bottom -45%',
+          start: "top 90%",
+          end: "bottom -45%",
           scrub: 1,
         },
-        x: '-52vw',
-        ease: 'circ.out',
+        x: "-52vw",
+        ease: "circ.out",
       });
     }
 
     // Animate Page 6 h2 and p elements
-    const page6h2 = page6Ref.current?.querySelector('h2');
-    const page6ps = page6Ref.current?.querySelectorAll('p');
+    const page6h2 = page6Ref.current?.querySelector("h2");
+    const page6ps = page6Ref.current?.querySelectorAll("p");
 
     if (page6h2) {
       gsap.from(page6h2, {
         scrollTrigger: {
           trigger: page6h2,
-          start: 'top 90%',
+          start: "top 90%",
         },
         opacity: 0,
         y: 50,
-        ease: 'expo.out',
+        ease: "expo.out",
         duration: 1,
       });
     }
@@ -114,33 +114,33 @@ export default function StandOutSection() {
         gsap.from(p, {
           scrollTrigger: {
             trigger: p,
-            start: 'top 90%',
+            start: "top 90%",
           },
           opacity: 0,
           y: 50,
           stagger: 0.2,
-          ease: 'expo.out',
+          ease: "expo.out",
           duration: 1,
         });
       });
     }
 
     // Animate Page 7 h1 elements
-    const page7h1s = page7Ref.current?.querySelectorAll('h1');
+    const page7h1s = page7Ref.current?.querySelectorAll("h1");
     if (page7h1s) {
       page7h1s.forEach((h1: Element) => {
         gsap.from(h1, {
           scrollTrigger: {
             trigger: h1,
-            start: 'top 90%',
+            start: "top 90%",
           },
           opacity: 0,
-          y: '50px',
-          z: '-90px',
-          rotateX: '-90deg',
-          skewX: '40deg',
-          skewY: '-8deg',
-          ease: 'circ.out',
+          y: "50px",
+          z: "-90px",
+          rotateX: "-90deg",
+          skewX: "40deg",
+          skewY: "-8deg",
+          ease: "circ.out",
           duration: 1,
         });
       });
@@ -149,28 +149,28 @@ export default function StandOutSection() {
 
   const handleCircleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     gsap.to(e.currentTarget, {
-      rotateX: '1440deg',
-      ease: 'linear',
+      rotateX: "1440deg",
+      ease: "linear",
       duration: 2,
     });
   };
 
   const handleCircleMouseEnter = () => {
-    const cursor = document.querySelector('[data-cursor]');
+    const cursor = document.querySelector("[data-cursor]");
     if (cursor) {
       gsap.to(cursor, {
         scale: 0.4,
-        ease: 'expo.out',
+        ease: "expo.out",
       });
     }
   };
 
   const handleCircleMouseLeave = () => {
-    const cursor = document.querySelector('[data-cursor]');
+    const cursor = document.querySelector("[data-cursor]");
     if (cursor) {
       gsap.to(cursor, {
         scale: 1,
-        ease: 'expo.out',
+        ease: "expo.out",
       });
     }
   };
@@ -205,26 +205,27 @@ export default function StandOutSection() {
           ))}
         </div>
         <h1>
-          <span style={{ fontStyle: 'normal' }}>&</span>MAKE
+          <span style={{ fontStyle: "normal" }}>&</span>MAKE
           <span
             style={{
-              fontFamily: 'Gilroy, sans-serif',
-              marginLeft: '2vw',
-              fontStyle: 'normal',
-              fontWeight: '600',
+              fontFamily: "Gilroy, sans-serif",
+              marginLeft: "2vw",
+              fontStyle: "normal",
+              color: "#f06e26",
+              fontWeight: "600",
             }}
           >
             ALL
           </span>
         </h1>
-        <h1>YOUR DREAMS</h1>
+        <h1>YOUR VISION</h1>
         <h1>
-          COME TRUE
+          A REALITY
           <span
             style={{
-              fontSize: '5rem',
-              fontStyle: 'normal',
-              marginLeft: '2vw',
+              fontSize: "5rem",
+              fontStyle: "normal",
+              marginLeft: "2vw",
             }}
           >
             *
@@ -238,16 +239,17 @@ export default function StandOutSection() {
           *
           <span>
             <p>
-              As long as your dreams revolve around something like; being the
-              proud owner of a spectacular website.
+              From strategy to design to development — NextDaySite delivers
+              world-class digital experiences built for speed, conversions, and
+              scale
             </p>
           </span>
         </h2>
         <p>
-          RaDins Design is a design practice focused on digital experiences.
-          With every single one of our clients, we bring forth a deep passion
-          for creative problem solving — which is what we deliver in the form
-          of custom and memorable experiences.
+          Nextdaysite was founded in 1999 with a mission to empower brands with
+          functional websites that add significant value to any project. In
+          today's digital age, this is needed to set apart any brand from its
+          rivals, while solidifying their digital footprints.
         </p>
       </section>
 
