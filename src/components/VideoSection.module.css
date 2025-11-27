@@ -12,8 +12,8 @@
 
 .mainvideo {
   position: relative;
-  height: 80vh;
-  width: 70%;
+  height: 90vh;
+  width: 80%;
   border-radius: 30vw;
   overflow: hidden;
   cursor: pointer;
@@ -58,7 +58,6 @@
   width: 100%;
   border-radius: 30vw;
   background-color: #0004;
-  /* box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.423) inset; */
   box-shadow: 0 0 20px 20px rgba(240, 110, 38, 0.12) inset;
   z-index: 999;
   pointer-events: none;
