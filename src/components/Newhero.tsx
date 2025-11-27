@@ -6,8 +6,8 @@ import { ClaudeAI, Cursor, Github, Google, Grok, OpenAI } from "@aliimam/logos";
 
 export function HeroSection02() {
   return (
-    <div className="min-h-screen relative text-black">
-      <div className="overflow-hidden flex flex-col px-6 items-center justify-center">
+    <div className="min-h-screen relative text-black bg-[#fef1e9]">
+      {/* <div className="overflow-hidden flex flex-col px-6 items-center justify-center">
         <div className="z-10 mt-28 my-20 space-y-10 border border-[#fffaec] shadow-2xl backdrop-blur-sm rounded-xl p-10 lg:p-20 mx-auto max-w-7xl flex flex-col">
           <div className="flex justify-center flex-col lg:flex-row items-center gap-6 lg:gap-10">
             <h1 className="font-playfair text-3xl font-medium mix-blend-overlay md:text-5xl lg:text-8xl text-center">
@@ -20,7 +20,6 @@ export function HeroSection02() {
             </p>
           </div>
 
-          {/* Logos Row */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex justify-center flex-wrap -space-y-4 -space-x-6">
               <OpenAI
@@ -66,7 +65,7 @@ export function HeroSection02() {
             <Button className="px-20 h-20 rounded-full">Explore Designs</Button>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className="w-full z-10 relative flex flex-col items-center">
         <p className="text-center text-muted-foreground mb-10 text-lg z-10 relative">
           Some of the top design tools used by professionals

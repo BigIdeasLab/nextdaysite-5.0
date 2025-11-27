@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="bg-[#e5e5e5]">
       <LoadingScreen />
-      <Header />
+      {/* <Header /> */}
       <main>
         <HeroSection02 />
         <VideoSection />
