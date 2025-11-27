@@ -15,10 +15,43 @@ interface FlowingMenuProps {
   items?: MenuItemProps[];
 }
 
-const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
+const items = [
+  {
+    link: "#",
+    text: "Mobile App",
+    image: "https://picsum.photos/600/400?random=1",
+  },
+  {
+    link: "#",
+    text: "Website Development",
+    image: "https://picsum.photos/600/400?random=2",
+  },
+  {
+    link: "#",
+    text: "Branding",
+    image: "https://picsum.photos/600/400?random=3",
+  },
+  {
+    link: "#",
+    text: "CMS Integration",
+    image: "https://picsum.photos/600/400?random=4",
+  },
+  {
+    link: "#",
+    text: "Visual Identity",
+    image: "https://picsum.photos/600/400?random=1",
+  },
+  {
+    link: "#",
+    text: "Brand Guidelines",
+    image: "https://picsum.photos/600/400?random=2",
+  },
+];
+
+const FlowingMenu: React.FC<FlowingMenuProps> = () => {
   return (
-    <div style={{ height: "600px", position: "relative" }}>
-      <div className="menu-wrap bg-black">
+    <div style={{ height: "900px", position: "relative" }}>
+      <div className="menu-wrap bg-[#090119]">
         <nav className="menu">
           {items.map((item, idx) => (
             <MenuItem key={idx} {...item} />

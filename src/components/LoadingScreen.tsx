@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import styles from './LoadingScreen.module.css';
+import { useEffect, useState } from "react";
+import styles from "./LoadingScreen.module.css";
 
 export default function LoadingScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -14,11 +14,11 @@ export default function LoadingScreen() {
       }, 300);
     };
 
-    if (document.readyState === 'complete') {
+    if (document.readyState === "complete") {
       handlePageLoad();
     } else {
-      window.addEventListener('load', handlePageLoad);
-      return () => window.removeEventListener('load', handlePageLoad);
+      window.addEventListener("load", handlePageLoad);
+      return () => window.removeEventListener("load", handlePageLoad);
     }
   }, []);
 

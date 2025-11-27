@@ -51,12 +51,12 @@
   gap: 1vw;
   padding: 0 20px;
   font-size: 6.5vw;
-  font-family: gilroy, 'Gilroy', sans-serif;
+  font-family: gilroy, "Gilroy", sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
   margin-left: -1vw;
   text-transform: uppercase;
-  color: rgb(8, 8, 8);
+  color: #f06e26;
   margin: 0;
   flex-wrap: nowrap;
 }
@@ -85,11 +85,11 @@
   gap: 1vw;
   padding: 0 20px;
   font-size: 6.5vw;
-  font-family: gilroy, 'Gilroy', sans-serif;
+  font-family: gilroy, "Gilroy", sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
   margin-left: -1vw;
-  color: rgb(72, 72, 72);
+  color: #a84d1b;
   text-transform: uppercase;
   margin: 0;
   flex-wrap: nowrap;
@@ -115,7 +115,7 @@
 .logoText h1 {
   display: flex;
   align-items: center;
-  font-family: gilroy, 'Gilroy', sans-serif;
+  font-family: gilroy, "Gilroy", sans-serif;
   font-weight: 600;
   color: rgb(31, 31, 31);
   margin: 0;
@@ -127,7 +127,7 @@
 .logoText h1 span {
   display: inline-block;
   font-size: 15vw;
-  font-family: playfair, 'Playfair Display', serif;
+  font-family: playfair, "Playfair Display", serif;
   font-weight: 400;
   line-height: 1;
 }
@@ -136,7 +136,7 @@
   display: flex;
   align-items: center;
   gap: 2vw;
-  font-family: gilroy, 'Gilroy', sans-serif;
+  font-family: gilroy, "Gilroy", sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
   position: absolute;

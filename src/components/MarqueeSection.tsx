@@ -52,6 +52,34 @@ export default function MarqueeSection() {
         ease: "none",
       });
     }
+
+    // Container slide-down animation
+    if (marqueeRef.current) {
+      const marqueeContainer = marqueeRef.current.querySelector(
+        `.${styles.marqueeContainer}`
+      ) as HTMLDivElement;
+
+      if (marqueeContainer) {
+        gsap.fromTo(
+          marqueeContainer,
+          {
+            y: -300,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+              trigger: marqueeRef.current,
+              start: "top 80%",
+              end: "top 30%",
+              scrub: 0.5,
+            },
+            ease: "power2.out",
+          }
+        );
+      }
+    }
   }, []);
 
   return (

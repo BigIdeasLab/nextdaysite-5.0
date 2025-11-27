@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #e5e5e5 0%, #f0f0f0 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +66,7 @@
 
 .imageOverlay p {
   margin: 0;
-  font-family: gilroy, 'Gilroy', sans-serif;
+  font-family: gilroy, "Gilroy", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -82,7 +81,7 @@
 }
 
 .marqueeText h2 {
-  font-family: playfair, 'Playfair Display', serif;
+  font-family: playfair, "Playfair Display", serif;
   font-size: 3vw;
   font-style: oblique;
   margin: 0;
