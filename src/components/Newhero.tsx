@@ -24,32 +24,32 @@ export function HeroSection02() {
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="flex justify-center flex-wrap -space-y-4 -space-x-6">
               <OpenAI
-                className="bg-white border text-black shadow-2xl h-20 w-20 rounded-full p-5"
+                className="bg-white text-black shadow-2xl h-20 w-20 rounded-full p-5"
                 size={20}
                 height={25}
               />
               <ClaudeAI
-                className="bg-white border shadow-2xl h-20 w-20 rounded-full p-5"
+                className="bg-white shadow-2xl h-20 w-20 rounded-full p-5"
                 size={20}
                 height={24}
               />
               <Cursor
-                className="bg-white hidden md:block h-20 w-20 text-black border shadow-2xl rounded-full p-5"
+                className="bg-white hidden md:block h-20 w-20 text-black shadow-2xl rounded-full p-5"
                 size={20}
                 height={16}
               />
               <Github
-                className="bg-white h-20 border text-black shadow-2xl w-20 rounded-full p-5"
+                className="bg-white h-20 text-black shadow-2xl w-20 rounded-full p-5"
                 size={20}
                 height={20}
               />
               <Grok
-                className="bg-white hidden md:block h-20 w-20 text-black border shadow-2xl rounded-full p-5"
+                className="bg-white hidden md:block h-20 w-20 text-black shadow-2xl rounded-full p-5"
                 size={20}
                 height={30}
               />
               <Google
-                className="bg-white h-20 w-20 border shadow-2xl rounded-full p-5"
+                className="bg-white h-20 w-20 shadow-2xl rounded-full p-5"
                 size={20}
                 height={30}
               />
@@ -74,7 +74,7 @@ export function HeroSection02() {
         <Marquee className="w-full">
           {technologies.map((tech, index) => (
             <div key={index} className="h-full">
-              <div className="flex items-center gap-3 h-full overflow-visible border backdrop-blur-md rounded-xl mx-10 min-w-[220px]">
+              <div className="flex items-center gap-3 h-full overflow-visible backdrop-blur-md rounded-xl mx-10 min-w-[220px]">
                 <div className="absolute bg-white border-r -z-50 p-3 rounded-l-md -left-12.5 top-6">
                   {tech.icon}
                 </div>
